@@ -2,6 +2,11 @@ board: Jackpot TMC2209
 name: LowRider
 meta: 2025-06-17 markv
 
+#
+# I think that the switches that I have are active low
+# which appears to be the opposite of the default configuration.
+#
+
 planner_blocks: 32
 
 stepping:
@@ -48,7 +53,7 @@ axes:
       feed_scaler: 1.100
     #X
     motor0:
-      limit_neg_pin: gpio.25:high
+      limit_neg_pin: gpio.25:low
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
       hard_limits: false
@@ -93,7 +98,7 @@ axes:
       feed_scaler: 1.100
     #Y
     motor0:
-      limit_neg_pin: gpio.33:high
+      limit_neg_pin: gpio.33:low
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
       hard_limits: false
@@ -121,7 +126,7 @@ axes:
 
     #A
     motor1:
-      limit_neg_pin: gpio.35:high
+      limit_neg_pin: gpio.35:low
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
       hard_limits: false
@@ -168,7 +173,7 @@ axes:
 
     motor0:
       limit_neg_pin: NO_PIN
-      limit_pos_pin: gpio.32:high
+      limit_pos_pin: gpio.32:low
       limit_all_pin: NO_PIN
       hard_limits: false
       pulloff_mm: 4.000
@@ -196,7 +201,7 @@ axes:
      #B
     motor1:
       limit_neg_pin: NO_PIN
-      limit_pos_pin: gpio.34:high
+      limit_pos_pin: gpio.34:low
       limit_all_pin: NO_PIN
       hard_limits: false
       pulloff_mm: 4.000
@@ -241,8 +246,7 @@ sdcard:
 # for now. -- markv
 
 probe:
-  #pin: gpio.36:low
-  pin: NO_PIN
+  pin: gpio.36:low
   toolsetter_pin: NO_PIN
   check_mode_start: true
 
