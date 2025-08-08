@@ -204,7 +204,8 @@ axes:
       limit_pos_pin: gpio.34:low
       limit_all_pin: NO_PIN
       hard_limits: false
-      pulloff_mm: 4.000
+      # 2025/08/08 calibration attempt, probably rough
+      pulloff_mm: 5.176
       tmc_2209:
         uart_num: 1
         addr: 3
