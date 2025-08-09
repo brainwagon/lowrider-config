@@ -37,7 +37,7 @@ axes:
 
   # there is one motor on the X axis...
   x:
-    steps_per_mm: 50.000
+    steps_per_mm: 40.000
     max_rate_mm_per_min: 9000.000
     acceleration_mm_per_sec2: 200.000
     max_travel_mm: 1220
@@ -82,7 +82,7 @@ axes:
 
   y:
     # two motors for Y... 
-    steps_per_mm: 50.000
+    steps_per_mm: 40.000
     max_rate_mm_per_min: 9000.000
     acceleration_mm_per_sec2: 200.000
     max_travel_mm: 2440
