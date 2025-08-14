@@ -154,9 +154,9 @@ axes:
 
   z:
     # two motors for Z
-    # modified for 400 steps per mm, as per my lead screws
-    # modified to 406.92 after testing revealed a 10mm resulted in 9.83mm zmove
-    steps_per_mm: 406.92
+    # a TR8x4 (four start) screw with 1/16 microsteps
+    # requires a 400 (micro) steps per mm
+    steps_per_mm: 400.0
     max_rate_mm_per_min: 1200.000
     acceleration_mm_per_sec2: 80.000
     max_travel_mm: 300.000
