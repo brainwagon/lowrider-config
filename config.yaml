@@ -154,8 +154,10 @@ axes:
 
   z:
     # two motors for Z
-    # a TR8x4 (four start) screw with 1/16 microsteps
-    # requires a 400 (micro) steps per mm
+    # a TR8x4 (four start) screw with 1/8 microsteps
+    # 200 steps * 8 microsteps = 1600 steps / revolution
+    # TR8x4 advances 4 mm per rotation, so the number
+    # number of steps_per_mm should be 1600 / 4 = 400
     steps_per_mm: 400.0
     max_rate_mm_per_min: 1200.000
     acceleration_mm_per_sec2: 80.000
