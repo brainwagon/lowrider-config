@@ -40,7 +40,8 @@ axes:
     steps_per_mm: 40.000
     max_rate_mm_per_min: 9000.000
     acceleration_mm_per_sec2: 200.000
-    max_travel_mm: 1220
+    # just about 24 inches
+    max_travel_mm: 600
     soft_limits: false
     homing:
       cycle: 2
@@ -85,7 +86,8 @@ axes:
     steps_per_mm: 40.000
     max_rate_mm_per_min: 9000.000
     acceleration_mm_per_sec2: 200.000
-    max_travel_mm: 2440
+    # just about 35 inches
+    max_travel_mm: 900
     soft_limits: false
     homing:
       cycle: 2
